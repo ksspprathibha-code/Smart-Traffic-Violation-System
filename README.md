@@ -68,6 +68,3 @@ To enhance road safety by automatically detecting traffic violations and reducin
 - Mobile app integration  
 
 ---
-
-## 👨‍💻 Author
-- Your Name
