@@ -1,20 +1,73 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Smart Traffic Violation System 🚦
 
-# Run and deploy your AI Studio app
+An AI-based Traffic Violation Detection System that uses computer vision and machine learning to identify traffic violations such as signal jumping, over-speeding, and accidents. The system helps improve road safety and traffic management.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/3eeb2c8f-4fbd-49b1-bdbd-e710b84754fd
+# RTRP Project – Smart Traffic Violation Analysis
 
-## Run Locally
+## 📌 Project Overview
+This project detects and analyzes traffic violations using video input and AI models. It automates monitoring by identifying violations like signal jumping and abnormal vehicle behavior in real-time.
 
-**Prerequisites:**  Node.js
+---
 
+## 🎯 Objective
+To enhance road safety by automatically detecting traffic violations and reducing the need for manual monitoring.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 🧠 Technologies Used
+- Computer Vision
+- Machine Learning
+- React (Frontend)
+- Node.js / Backend
+- AI Models for Detection
+
+---
+
+## ⚙️ Features
+- 🚗 Detects traffic violations automatically  
+- 🎥 Video analysis for real-time monitoring  
+- 📊 Dashboard for insights and reports  
+- ⚠️ Accident detection system  
+- 🤖 AI-powered predictions  
+
+---
+⚙️ Tech Stack
+
+| Category        | Technology Used |
+|----------------|----------------|
+| Frontend       | React, TypeScript |
+| Backend        | Node.js |
+| AI/ML          | Computer Vision |
+| Styling        | CSS |
+| Tools          | Vite |
+
+---
+
+## 🚀 How to Run
+1. Clone the repository  
+2. Install dependencies using `npm install`  
+3. Start frontend and backend servers  
+4. Open in browser  
+
+---
+
+## 📁 Project Structure
+- backend/ → Server-side logic  
+- components/ → UI components  
+- services/ → API and logic services  
+- public/ → Static files  
+
+---
+
+## 📊 Future Enhancements
+- Live traffic camera integration  
+- License plate recognition  
+- Cloud-based data storage  
+- Mobile app integration  
+
+---
+
+## 👨‍💻 Author
+- Your Name
