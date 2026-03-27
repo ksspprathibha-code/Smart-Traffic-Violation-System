@@ -1,0 +1,101 @@
+/* Global responsive helpers */
+:root {
+  --safe-padding: 1rem;
+}
+/* Better box model baseline */
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Prevent horizontal overflow caused by fixed-width children */
+body, #root { overflow-x: hidden; }
+/* Make fonts responsive: scale slightly on larger screens */
+@media (min-width: 1280px) {
+  html { font-size: 16px; }
+}
+@media (max-width: 1279px) {
+  html { font-size: 15px; }
+}
+@media (max-width: 640px) {
+  html { font-size: 14px; }
+}
+/* Utility to hide scrollbars when needed */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+/* Ensure Leaflet/map and video elements fill their containers */
+.leaflet-container, .map-tiles-dark { width: 100% !important; height: 100% !important; }
+video { max-width: 100%; height: auto; }
+img, video { display: block; max-width: 100%; height: auto; }
+/* Make large rounded containers adapt on small screens */
+.rounded-\[3rem\] { border-radius: 1.5rem; }
+@media (max-width: 768px) {
+  .rounded-\[3rem\] { border-radius: 1rem; }
+}
+
+/* Small helper to ensure main padding works with safe-area */
+main { padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+
+/* Breakpoints helpers */
+@media (max-width: 768px) {
+  /* small-screen adjustments are handled via Tailwind utility classes in components */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Medium devices adjustments */
+}
+
+@media (min-width: 1024px) {
+  /* Large devices adjustments */
+}
+/* ===== FIX OVERFLOW + SCREEN FIT ===== */
+
+.main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  min-width: 0; /* 🔥 VERY IMPORTANT */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap; /* 🔥 THIS FIXES YOUR ISSUE */
+  gap: 10px;
+}
+main {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 100%;
+}
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
